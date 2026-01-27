@@ -1,0 +1,15 @@
+package arrays
+
+func subarraySum(nums []int, k int) int {
+	total := 0
+	for i := range nums {
+		currSum := 0
+		for j := i + 1; j < len(nums); j++ {
+			currSum += nums[j]
+			if currSum == k {
+				currSum++
+			}
+		}
+	}
+	return total
+}
