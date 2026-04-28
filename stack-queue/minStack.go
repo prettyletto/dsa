@@ -9,7 +9,7 @@ type MinStack struct {
 	data []entry
 }
 
-func Constructor() MinStack {
+func ConstructorMin() MinStack {
 	return MinStack{data: []entry{}}
 }
 
